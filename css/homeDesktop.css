@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /*Colores*/
+    --rojo-fondos:#510319;
+    --rojo-vivos: #BF191E;
+    --rojo-vivos-t: #64171a;
+    --rojo-black:#150000;
+    --warm-black2:#282623;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans',sans-serif;
+}
+
+
+
+
+body{
+    color: var(--off-white);
+    background-image: url(./../img/pattern.png);
+
+}
+
+.principal{
+    display: flex;
+    flex-direction: inherit;
+
+}
+
+/* Estilos del sidebar */
+.sidebar{
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+    width: 100%;
+    order: 1;
+}
+.logo{
+    height: 100%;
+    margin-top: 10px;
+    
+}
+.logo img{
+    height: 80%;
+
+}
+
+.container{
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
+    order: 3;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 0px;
+
+}
+p{
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    
+}
+.card-container{
+    height: 60%;
+    text-align: center;
+    padding-top: 30px;
+    order: 2;
+}
+.card-row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.card{
+    
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: var(--rojo-vivos-t);
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+    background-color: var(--off-white);
+
+}
+
+/*Lado derecho*/
+.contenedor{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de seccion 1*/
+.seccion1{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    order: 1;
+}
+.row1 button{
+    width: 100px;
+    height: 50px;
+    background-color: var(--rojo-vivos-t);
+    color: var(--off-white);
+    margin-right: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: solid 2px var(--rojo-vivos-t);
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+
+.row1 button:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+    background-color: var(--off-white);
+    cursor: pointer;
+    color: var(--rojo-black);
+    
+}
+
+
+
+.row2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    order: 2;
+}
+#btn-register{
+    width: 100px;
+    height: 50px;
+    background-color: var(--rojo-vivos-t);
+    color: var(--off-white);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: solid 2px var(--rojo-vivos-t);
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+#btn-register:hover {
+    transform: scale(1.05);
+    transition: 200ms;
+    cursor: pointer;
+    
+}
+
+#mostrar{
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 80%;
+    line-height: 100px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    overflow-y: scroll ;
+    color:var(--rojo-black);
+    font-size:1.6rem;
+    visibility: hidden;
+    transition: 200ms;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+ }
+ #mostrar::-webkit-scrollbar{
+     -webkit-appearance: none;
+ }
+ #mostrar::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    height: 50px;
+    border: 2px solid #f1f2f3;
+}
+
+/* Estilos de seccion 2*/
+
+.seccion2{
+    height: 30%;
+    width: 100%; 
+}
+@media (min-width:1400px){
+
+    p{
+        font-size: 2rem;
+        text-align: left;
+        padding-left: 200px;
+        padding-right: 200px;
+    
+        
+    }
+
+}
+
+
+
+
